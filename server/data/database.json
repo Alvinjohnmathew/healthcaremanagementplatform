@@ -1,0 +1,871 @@
+{
+  "profiles": [
+    {
+      "id": "prof-eleanor",
+      "fullName": "Eleanor Vance",
+      "preferredName": "Grandma Ellie",
+      "age": 78,
+      "dateOfBirth": "1948-04-12",
+      "gender": "Female",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+      "address": "42 Maplewood Terrace, Apt 3B, Boston, MA",
+      "bloodType": "A+",
+      "allergies": [
+        "Penicillin",
+        "Sulfa drugs",
+        "Shellfish"
+      ],
+      "chronicConditions": [
+        "Type 2 Diabetes Mellitus",
+        "Hypertension (High BP)",
+        "Mild Osteoarthritis in knees"
+      ],
+      "primaryPhysician": {
+        "name": "Dr. Sarah Bennett, MD",
+        "specialty": "Internal Medicine & Geriatrics",
+        "clinic": "Beacon Hill Elder Health Center",
+        "phone": "(617) 555-0142",
+        "email": "dr.bennett@beaconhillhealth.org"
+      },
+      "emergencyContacts": [
+        {
+          "id": "ec-1",
+          "name": "David Vance",
+          "relation": "Son (Primary Caregiver)",
+          "phone": "(617) 555-0899",
+          "email": "david.vance@silvercare-demo.com",
+          "isPrimary": true,
+          "canReceiveAlerts": true
+        },
+        {
+          "id": "ec-2",
+          "name": "Clara Miller, RN",
+          "relation": "Visiting Home Nurse",
+          "phone": "(617) 555-0321",
+          "email": "nurse.clara@eldercarevisiting.com",
+          "isPrimary": false,
+          "canReceiveAlerts": true
+        },
+        {
+          "id": "ec-3",
+          "name": "Emily Vance",
+          "relation": "Granddaughter",
+          "phone": "(617) 555-0711",
+          "email": "emily.vance@silvercare-demo.com",
+          "isPrimary": false,
+          "canReceiveAlerts": true
+        }
+      ],
+      "medicalNotes": "DNR on file with Beacon Hill Health. Eleanor uses walking cane outdoors. Prefers medications with warm water or light applesauce.",
+      "passcodes": {
+        "seniorPin": "1234",
+        "caretakerPasscode": "CARE789",
+        "familyPasscode": "FAM456"
+      },
+      "preferredLanguage": "English",
+      "fontSizePreference": "large",
+      "highContrast": false,
+      "voiceAssistEnabled": true,
+      "activeStatus": "active"
+    },
+    {
+      "id": "prof-arthur",
+      "fullName": "Arthur Pendelton",
+      "preferredName": "Arthur",
+      "age": 83,
+      "dateOfBirth": "1943-09-28",
+      "gender": "Male",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
+      "address": "15 Oak Ridge Blvd, Brookline, MA",
+      "bloodType": "O+",
+      "allergies": [
+        "Aspirin (triggers GI bleed)",
+        "Codeine"
+      ],
+      "chronicConditions": [
+        "Atrial Fibrillation (AFib)",
+        "Post-Ischemic Stroke (Mild right hand weakness)",
+        "Hyperlipidemia"
+      ],
+      "primaryPhysician": {
+        "name": "Dr. Marcus Vance, MD",
+        "specialty": "Cardiology",
+        "clinic": "New England Heart Institute",
+        "phone": "(617) 555-0988",
+        "email": "dr.m.vance@neheart.org"
+      },
+      "emergencyContacts": [
+        {
+          "id": "ec-4",
+          "name": "Rachel Pendelton-Lee",
+          "relation": "Daughter",
+          "phone": "(617) 555-8832",
+          "email": "rachel.pendelton@silvercare-demo.com",
+          "isPrimary": true,
+          "canReceiveAlerts": true
+        },
+        {
+          "id": "ec-5",
+          "name": "Thomas Lee",
+          "relation": "Son-in-law",
+          "phone": "(617) 555-9921",
+          "email": "thomas.lee@silvercare-demo.com",
+          "isPrimary": false,
+          "canReceiveAlerts": true
+        }
+      ],
+      "medicalNotes": "Arthur is on blood thinners. Fall risk protocol active. Non-slip socks and bathroom grab bars installed.",
+      "passcodes": {
+        "seniorPin": "5678",
+        "caretakerPasscode": "NURSE321",
+        "familyPasscode": "LOVE123"
+      },
+      "preferredLanguage": "English",
+      "fontSizePreference": "extra-large",
+      "highContrast": true,
+      "voiceAssistEnabled": true,
+      "activeStatus": "active"
+    }
+  ],
+  "medications": [
+    {
+      "id": "med-1",
+      "profileId": "prof-eleanor",
+      "name": "Metformin HCl",
+      "genericName": "Metformin Extended Release",
+      "dosage": "500",
+      "unit": "mg",
+      "shape": "oval",
+      "color": "#ffffff",
+      "imprint": "M 500",
+      "instructions": "Take with food to avoid stomach upset. Swallow whole, do not crush.",
+      "frequency": "twice_daily",
+      "timeSlots": [
+        {
+          "id": "ts-1",
+          "time": "08:30",
+          "label": "Morning",
+          "doseAmount": "1 tablet (500mg)"
+        },
+        {
+          "id": "ts-2",
+          "time": "18:30",
+          "label": "Evening",
+          "doseAmount": "1 tablet (500mg)"
+        }
+      ],
+      "inventoryCount": 14,
+      "refillThreshold": 10,
+      "lastRefillDate": "2026-10-28",
+      "prescribingDoctor": "Dr. Sarah Bennett",
+      "rxNumber": "RX-982144-A",
+      "pharmacyInfo": {
+        "name": "CVS Beacon Street",
+        "phone": "(617) 555-7811"
+      },
+      "active": true,
+      "foodInstructions": "with_food",
+      "warnings": [
+        "Take with meals",
+        "Avoid excessive alcohol consumption"
+      ]
+    },
+    {
+      "id": "med-2",
+      "profileId": "prof-eleanor",
+      "name": "Lisinopril",
+      "genericName": "Lisinopril",
+      "dosage": "10",
+      "unit": "mg",
+      "shape": "round",
+      "color": "#fef08a",
+      "imprint": "L 10",
+      "instructions": "Take once every morning. Helps control blood pressure and protects kidneys.",
+      "frequency": "daily",
+      "timeSlots": [
+        {
+          "id": "ts-3",
+          "time": "08:30",
+          "label": "Morning",
+          "doseAmount": "1 tablet (10mg)"
+        }
+      ],
+      "inventoryCount": 22,
+      "refillThreshold": 7,
+      "lastRefillDate": "2026-11-01",
+      "prescribingDoctor": "Dr. Sarah Bennett",
+      "rxNumber": "RX-773120-B",
+      "pharmacyInfo": {
+        "name": "CVS Beacon Street",
+        "phone": "(617) 555-7811"
+      },
+      "active": true,
+      "foodInstructions": "anytime",
+      "warnings": [
+        "May cause slight dizziness upon standing",
+        "Avoid potassium salt substitutes"
+      ]
+    },
+    {
+      "id": "med-3",
+      "profileId": "prof-eleanor",
+      "name": "Atorvastatin",
+      "genericName": "Atorvastatin Calcium (Lipitor)",
+      "dosage": "20",
+      "unit": "mg",
+      "shape": "oval",
+      "color": "#bae6fd",
+      "imprint": "AT 20",
+      "instructions": "Take before going to bed. Controls cholesterol.",
+      "frequency": "daily",
+      "timeSlots": [
+        {
+          "id": "ts-4",
+          "time": "21:00",
+          "label": "Bedtime",
+          "doseAmount": "1 tablet (20mg)"
+        }
+      ],
+      "inventoryCount": 19,
+      "refillThreshold": 7,
+      "lastRefillDate": "2026-10-25",
+      "prescribingDoctor": "Dr. Sarah Bennett",
+      "rxNumber": "RX-649012-C",
+      "pharmacyInfo": {
+        "name": "CVS Beacon Street",
+        "phone": "(617) 555-7811"
+      },
+      "active": true,
+      "foodInstructions": "anytime",
+      "warnings": [
+        "Do NOT consume Grapefruit or grapefruit juice while taking this medication!"
+      ]
+    },
+    {
+      "id": "med-4",
+      "profileId": "prof-eleanor",
+      "name": "Glipizide",
+      "genericName": "Glipizide XL",
+      "dosage": "5",
+      "unit": "mg",
+      "shape": "round",
+      "color": "#fed7aa",
+      "imprint": "G 5",
+      "instructions": "Take 30 minutes before morning breakfast.",
+      "frequency": "daily",
+      "timeSlots": [
+        {
+          "id": "ts-5",
+          "time": "08:00",
+          "label": "Morning",
+          "doseAmount": "1 tablet (5mg)"
+        }
+      ],
+      "inventoryCount": 8,
+      "refillThreshold": 10,
+      "lastRefillDate": "2026-10-14",
+      "prescribingDoctor": "Dr. Alan Cooper",
+      "rxNumber": "RX-312988-G",
+      "pharmacyInfo": {
+        "name": "CVS Beacon Street",
+        "phone": "(617) 555-7811"
+      },
+      "active": true,
+      "foodInstructions": "before_food",
+      "warnings": [
+        "Low stock! Only 8 pills remaining",
+        "Have glucose tabs or snack ready if shaky"
+      ]
+    },
+    {
+      "id": "med-5",
+      "profileId": "prof-eleanor",
+      "name": "Calcium Citrate + Vitamin D3",
+      "genericName": "Calcium Citrate 600mg + D3 400IU",
+      "dosage": "600",
+      "unit": "mg",
+      "shape": "capsule",
+      "color": "#dcfce7",
+      "imprint": "CAL-D",
+      "instructions": "Take with lunchtime meal for bone density support.",
+      "frequency": "daily",
+      "timeSlots": [
+        {
+          "id": "ts-6",
+          "time": "12:30",
+          "label": "Noon",
+          "doseAmount": "1 softgel"
+        }
+      ],
+      "inventoryCount": 45,
+      "refillThreshold": 14,
+      "lastRefillDate": "2026-10-10",
+      "prescribingDoctor": "Dr. Sarah Bennett",
+      "rxNumber": "OTC-9901",
+      "pharmacyInfo": {
+        "name": "CVS Beacon Street",
+        "phone": "(617) 555-7811"
+      },
+      "active": true,
+      "foodInstructions": "with_food",
+      "warnings": [
+        "Do not take at the exact same moment as iron supplements"
+      ]
+    },
+    {
+      "id": "med-6",
+      "profileId": "prof-arthur",
+      "name": "Eliquis",
+      "genericName": "Apixaban Blood Thinner",
+      "dosage": "5",
+      "unit": "mg",
+      "shape": "oval",
+      "color": "#fbcfe8",
+      "imprint": "894 5",
+      "instructions": "CRITICAL ANTICOAGULANT. Take exactly 12 hours apart. Do not skip.",
+      "frequency": "twice_daily",
+      "timeSlots": [
+        {
+          "id": "ts-7",
+          "time": "09:00",
+          "label": "Morning",
+          "doseAmount": "1 tablet (5mg)"
+        },
+        {
+          "id": "ts-8",
+          "time": "21:00",
+          "label": "Bedtime",
+          "doseAmount": "1 tablet (5mg)"
+        }
+      ],
+      "inventoryCount": 28,
+      "refillThreshold": 14,
+      "lastRefillDate": "2026-11-04",
+      "prescribingDoctor": "Dr. Marcus Vance",
+      "rxNumber": "RX-ELI-8812",
+      "pharmacyInfo": {
+        "name": "Walgreens Brookline",
+        "phone": "(617) 555-4300"
+      },
+      "active": true,
+      "foodInstructions": "anytime",
+      "warnings": [
+        "CRITICAL: Do NOT take Aspirin, Ibuprofen, or NSAIDs",
+        "Report any unusual bruising or bleeding immediately"
+      ]
+    },
+    {
+      "id": "med-7",
+      "profileId": "prof-arthur",
+      "name": "Metoprolol Succinate",
+      "genericName": "Metoprolol Extended Release",
+      "dosage": "25",
+      "unit": "mg",
+      "shape": "round",
+      "color": "#ffffff",
+      "imprint": "M 25",
+      "instructions": "Take every morning with breakfast. Controls heart rate rhythm.",
+      "frequency": "daily",
+      "timeSlots": [
+        {
+          "id": "ts-9",
+          "time": "09:00",
+          "label": "Morning",
+          "doseAmount": "1 tablet (25mg)"
+        }
+      ],
+      "inventoryCount": 30,
+      "refillThreshold": 10,
+      "lastRefillDate": "2026-11-05",
+      "prescribingDoctor": "Dr. Marcus Vance",
+      "rxNumber": "RX-MET-4419",
+      "pharmacyInfo": {
+        "name": "Walgreens Brookline",
+        "phone": "(617) 555-4300"
+      },
+      "active": true,
+      "foodInstructions": "with_food",
+      "warnings": [
+        "Do not stop taking abruptly"
+      ]
+    }
+  ],
+  "medicationLogs": [
+    {
+      "id": "log-1",
+      "profileId": "prof-eleanor",
+      "medicationId": "med-4",
+      "medicationName": "Glipizide 5mg",
+      "dosage": "5mg",
+      "scheduledTime": "2026-11-15T08:00:00.000Z",
+      "slotLabel": "Morning",
+      "status": "taken",
+      "loggedAt": "2026-11-15T08:05:00.000Z",
+      "loggedByRole": "senior",
+      "loggedByName": "Eleanor Vance",
+      "notes": "Took with warm water before tea",
+      "moodRating": "good"
+    },
+    {
+      "id": "log-2",
+      "profileId": "prof-eleanor",
+      "medicationId": "med-1",
+      "medicationName": "Metformin HCl 500mg",
+      "dosage": "500mg",
+      "scheduledTime": "2026-11-15T08:30:00.000Z",
+      "slotLabel": "Morning",
+      "status": "taken",
+      "loggedAt": "2026-11-15T08:35:00.000Z",
+      "loggedByRole": "senior",
+      "loggedByName": "Eleanor Vance",
+      "notes": "Had oatmeal breakfast first",
+      "moodRating": "great"
+    },
+    {
+      "id": "log-3",
+      "profileId": "prof-eleanor",
+      "medicationId": "med-2",
+      "medicationName": "Lisinopril 10mg",
+      "dosage": "10mg",
+      "scheduledTime": "2026-11-15T08:30:00.000Z",
+      "slotLabel": "Morning",
+      "status": "taken",
+      "loggedAt": "2026-11-15T08:36:00.000Z",
+      "loggedByRole": "senior",
+      "loggedByName": "Eleanor Vance",
+      "notes": "Taken together with Metformin",
+      "moodRating": "great"
+    },
+    {
+      "id": "log-4",
+      "profileId": "prof-eleanor",
+      "medicationId": "med-5",
+      "medicationName": "Calcium Citrate + Vitamin D3",
+      "dosage": "600mg",
+      "scheduledTime": "2026-11-15T12:30:00.000Z",
+      "slotLabel": "Noon",
+      "status": "taken",
+      "loggedAt": "2026-11-15T12:45:00.000Z",
+      "loggedByRole": "caretaker",
+      "loggedByName": "Clara Miller, RN",
+      "notes": "Administered with lunch vegetable soup",
+      "moodRating": "good"
+    },
+    {
+      "id": "log-missed-1794734393170-med-6",
+      "profileId": "prof-arthur",
+      "medicationId": "med-6",
+      "medicationName": "Eliquis 5mg",
+      "dosage": "5mg",
+      "scheduledTime": "2026-11-15T03:30:00.000Z",
+      "slotLabel": "Morning",
+      "status": "missed",
+      "loggedAt": "2026-11-15T09:19:53.170Z",
+      "notes": "Auto-marked missed by CareBridge adherence monitoring system"
+    },
+    {
+      "id": "log-missed-1794734393172-med-7",
+      "profileId": "prof-arthur",
+      "medicationId": "med-7",
+      "medicationName": "Metoprolol Succinate 25mg",
+      "dosage": "25mg",
+      "scheduledTime": "2026-11-15T03:30:00.000Z",
+      "slotLabel": "Morning",
+      "status": "missed",
+      "loggedAt": "2026-11-15T09:19:53.172Z",
+      "notes": "Auto-marked missed by CareBridge adherence monitoring system"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "apt-1",
+      "profileId": "prof-eleanor",
+      "title": "Cardiology 6-Month Review & ECG",
+      "doctorName": "Dr. Sarah Bennett, MD",
+      "specialty": "Cardiology & Geriatric Medicine",
+      "clinicName": "Beacon Hill Heart & Vascular Pavilion",
+      "address": "120 Tremont St, Suite 400, Boston, MA",
+      "phone": "(617) 555-0142",
+      "dateTime": "2026-11-17T13:19:52.999Z",
+      "status": "upcoming",
+      "transportationStatus": "arranged",
+      "driverOrCompanion": "Son David Vance (Driving)",
+      "preparationChecklist": [
+        {
+          "id": "pc-1",
+          "task": "Fasting from 8:00 AM (water permitted)",
+          "completed": false
+        },
+        {
+          "id": "pc-2",
+          "task": "Bring updated printed medication list from CareBridge",
+          "completed": true
+        },
+        {
+          "id": "pc-3",
+          "task": "Wear loose-fitting two-piece outfit for ECG chest electrodes",
+          "completed": false
+        },
+        {
+          "id": "pc-4",
+          "task": "Bring Medicare and supplemental insurance cards",
+          "completed": true
+        }
+      ],
+      "questionsForDoctor": [
+        "Can we adjust the evening Metformin timing if mild indigestion recurs?",
+        "Is the knee arthritis responding adequately, or should we schedule a physical therapy review?",
+        "Check if blood pressure readings averaging 124/78 are within the ideal target window."
+      ],
+      "reminderSent24h": false,
+      "reminderSent2h": false
+    },
+    {
+      "id": "apt-2",
+      "profileId": "prof-eleanor",
+      "title": "Diabetic Retinal Eye Exam",
+      "doctorName": "Dr. Harold Chen, OD",
+      "specialty": "Optometry & Ophthalmology",
+      "clinicName": "New England Eye Center",
+      "address": "750 Washington St, Boston, MA",
+      "phone": "(617) 555-3390",
+      "dateTime": "2026-11-24T09:19:52.999Z",
+      "status": "upcoming",
+      "transportationStatus": "needed",
+      "driverOrCompanion": "Need family volunteer (eyes will be dilated for 3-4 hours)",
+      "preparationChecklist": [
+        {
+          "id": "pc-5",
+          "task": "Bring dark UV sunglasses for post-dilation ride home",
+          "completed": false
+        },
+        {
+          "id": "pc-6",
+          "task": "Do not drive after appointment",
+          "completed": false
+        }
+      ],
+      "questionsForDoctor": [
+        "Check for any signs of diabetic microvascular changes in the macula."
+      ]
+    },
+    {
+      "id": "apt-3",
+      "profileId": "prof-arthur",
+      "title": "Post-Stroke Neurological & Mobility Assessment",
+      "doctorName": "Dr. Aris Thorne, MD",
+      "specialty": "Neurology & Stroke Recovery",
+      "clinicName": "Mass General Brigham Neuro Rehabilitation",
+      "address": "55 Fruit St, Boston, MA",
+      "phone": "(617) 555-6677",
+      "dateTime": "2026-11-19T09:19:52.999Z",
+      "status": "upcoming",
+      "transportationStatus": "arranged",
+      "driverOrCompanion": "Daughter Rachel Pendelton",
+      "preparationChecklist": [
+        {
+          "id": "pc-7",
+          "task": "Bring walking quad-cane and wrist brace",
+          "completed": true
+        },
+        {
+          "id": "pc-8",
+          "task": "Bring PT exercise adherence log",
+          "completed": true
+        }
+      ],
+      "questionsForDoctor": [
+        "Can Arthur increase grip strengthening therapy duration?",
+        "Assess AFib stability with Eliquis dosage."
+      ]
+    }
+  ],
+  "routines": [
+    {
+      "id": "rt-1",
+      "profileId": "prof-eleanor",
+      "title": "Daily Hydration Target",
+      "type": "hydration",
+      "targetValue": 6,
+      "unit": "glasses",
+      "frequency": "Daily (Aim for 6 glasses)",
+      "iconName": "Droplets",
+      "description": "Vital for kidney health, preventing dizziness, and optimal medication metabolism.",
+      "entries": [
+        {
+          "id": "re-1",
+          "timestamp": "2026-11-15T09:00:00.000Z",
+          "value": 1,
+          "notes": "Glass of lemon water",
+          "loggedBy": "Eleanor"
+        },
+        {
+          "id": "re-2",
+          "timestamp": "2026-11-15T11:30:00.000Z",
+          "value": 1,
+          "notes": "Chamomile tea",
+          "loggedBy": "Eleanor"
+        },
+        {
+          "id": "re-3",
+          "timestamp": "2026-11-15T13:00:00.000Z",
+          "value": 1,
+          "notes": "Water with lunch",
+          "loggedBy": "Clara (Nurse)"
+        },
+        {
+          "id": "re-4",
+          "timestamp": "2026-11-15T15:30:00.000Z",
+          "value": 1,
+          "notes": "Afternoon refreshment",
+          "loggedBy": "Eleanor"
+        }
+      ]
+    },
+    {
+      "id": "rt-2",
+      "profileId": "prof-eleanor",
+      "title": "Morning Blood Pressure Check",
+      "type": "blood_pressure",
+      "targetValue": "< 130/80",
+      "unit": "mmHg",
+      "frequency": "Every Morning after resting 5 mins",
+      "iconName": "Activity",
+      "description": "Monitor with Omron arm cuff before morning caffeine or medication.",
+      "entries": [
+        {
+          "id": "re-5",
+          "timestamp": "2026-11-15T08:15:00.000Z",
+          "value": "124/78",
+          "notes": "Pulse 71 bpm. Eleanor was calm and rested.",
+          "loggedBy": "Eleanor"
+        },
+        {
+          "id": "re-6",
+          "timestamp": "2026-11-14T08:20:00.000Z",
+          "value": "126/80",
+          "notes": "Pulse 74 bpm.",
+          "loggedBy": "Eleanor"
+        },
+        {
+          "id": "re-7",
+          "timestamp": "2026-11-13T08:10:00.000Z",
+          "value": "122/76",
+          "notes": "Pulse 69 bpm.",
+          "loggedBy": "David Vance"
+        }
+      ]
+    },
+    {
+      "id": "rt-3",
+      "profileId": "prof-eleanor",
+      "title": "Fasting Blood Glucose",
+      "type": "blood_glucose",
+      "targetValue": "90 - 120",
+      "unit": "mg/dL",
+      "frequency": "Daily upon waking",
+      "iconName": "HeartPulse",
+      "description": "Finger-prick glucometer test to monitor diabetes control.",
+      "entries": [
+        {
+          "id": "re-8",
+          "timestamp": "2026-11-15T07:45:00.000Z",
+          "value": "108",
+          "notes": "Great reading! Fasted for 9 hours.",
+          "loggedBy": "Eleanor"
+        },
+        {
+          "id": "re-9",
+          "timestamp": "2026-11-14T07:50:00.000Z",
+          "value": "114",
+          "notes": "Normal fasting reading.",
+          "loggedBy": "Eleanor"
+        },
+        {
+          "id": "re-10",
+          "timestamp": "2026-11-13T07:40:00.000Z",
+          "value": "110",
+          "notes": "Target range met.",
+          "loggedBy": "Eleanor"
+        }
+      ]
+    },
+    {
+      "id": "rt-4",
+      "profileId": "prof-eleanor",
+      "title": "Gentle Garden Mobility Walk",
+      "type": "mobility",
+      "targetValue": 20,
+      "unit": "minutes",
+      "frequency": "Daily in sunny courtyard",
+      "iconName": "Footprints",
+      "description": "Helps joint mobility and cardiovascular endurance. Uses single-point cane.",
+      "entries": [
+        {
+          "id": "re-11",
+          "timestamp": "2026-11-15T10:15:00.000Z",
+          "value": 20,
+          "notes": "Walked courtyard with Emily. Enjoyed the autumn sun!",
+          "loggedBy": "Emily Vance"
+        },
+        {
+          "id": "re-12",
+          "timestamp": "2026-11-14T10:30:00.000Z",
+          "value": 15,
+          "notes": "Felt slight knee stiffness, rested after 15 mins.",
+          "loggedBy": "Clara (Nurse)"
+        }
+      ]
+    }
+  ],
+  "careMessages": [
+    {
+      "id": "msg-1",
+      "profileId": "prof-eleanor",
+      "senderName": "David Vance",
+      "senderRole": "family",
+      "text": "Good morning Mom! Emily and I will be coming over around 5:30 PM with your favorite vegetable minestrone. Remember to drink your afternoon water!",
+      "timestamp": "2026-11-15T09:15:00.000Z",
+      "reactions": {
+        "heart": 3,
+        "hug": 2
+      }
+    },
+    {
+      "id": "msg-2",
+      "profileId": "prof-eleanor",
+      "senderName": "Clara Miller, RN",
+      "senderRole": "caretaker",
+      "text": "Shift update: Administered noon calcium. Eleanor was in wonderful spirits today and walked 20 mins. Blood pressure was a steady 124/78. Low pill warning noted for Glipizide (8 remaining) - pharmacy reorder queued.",
+      "timestamp": "2026-11-15T13:30:00.000Z",
+      "reactions": {
+        "thumbsUp": 2
+      }
+    },
+    {
+      "id": "msg-3",
+      "profileId": "prof-eleanor",
+      "senderName": "Emily Vance",
+      "senderRole": "family",
+      "text": "Loved walking with you this morning Grandma! Your roses are looking so pretty.",
+      "timestamp": "2026-11-15T14:10:00.000Z",
+      "reactions": {
+        "heart": 4
+      }
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-3ecace94",
+      "profileId": "prof-eleanor",
+      "type": "missed_alert",
+      "recipientName": "David Vance",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "🚨 Missed Dose Alert for Grandma Ellie: Metformin HCl is Overdue",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fef2f2; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(220,38,38,0.12); border: 2px solid #fecaca; }\n          .header { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.3); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .alert-box { background: #fee2e2; border: 1px solid #fca5a5; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .call-button { display: inline-block; background: #dc2626; color: #ffffff !important; text-decoration: none; font-weight: 700; padding: 14px 28px; border-radius: 8px; font-size: 16px; margin-top: 12px; text-align: center; }\n          .footer { background: #f8fafc; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">🚨 URGENT ADHERENCE ALERT</span>\n            <h1 class=\"title\">Missed Dose: Metformin HCl</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Dear <strong>David Vance</strong>,</p>\n            <p>Our proactive monitoring system detected that <strong>Eleanor Vance (Grandma Ellie)</strong> has not marked their scheduled medication as taken within the 30-minute grace window:</p>\n            \n            <div class=\"alert-box\">\n              <h3 style=\"margin-top:0; color:#991b1b; font-size:18px;\">⚠️ Medication Details</h3>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Medication:</strong> Metformin HCl (500mg)</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Scheduled Time:</strong> 08:30 AM</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Status:</strong> Overdue / Unconfirmed</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Condition Treated:</strong> Type 2 Diabetes Mellitus, Hypertension (High BP), Mild Osteoarthritis in knees</p>\n            </div>\n\n            <p style=\"font-size:15px; color:#475569;\">\n              We recommend giving <strong>Grandma Ellie</strong> a quick gentle phone call to check in and verify their well-being.\n            </p>\n\n            <div style=\"text-align: center; margin: 24px 0;\">\n              <a href=\"tel:(617) 555-0899\" class=\"call-button\">\n                📞 Call Grandma Ellie Now ((617) 555-0899)\n              </a>\n            </div>\n\n            <p style=\"font-size:13px; color:#64748b; margin-top:20px;\">\n              Primary Physician: Dr. Sarah Bennett, MD - (617) 555-0142\n            </p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Automated Care Escalation System\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-15T09:31:47.195Z",
+      "status": "simulated",
+      "triggerReason": "Grace window elapsed (30 mins) without dose confirmation",
+      "metadata": {
+        "medicationId": "med-1",
+        "scheduledTimeStr": "08:30 AM"
+      }
+    },
+    {
+      "id": "notif-288bc6e1",
+      "profileId": "prof-eleanor",
+      "type": "dose_reminder",
+      "recipientName": "Grandma Ellie",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "senior",
+      "subject": "⏰ Reminder: Metformin HCl due at 08:30 for Grandma Ellie",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }\n          .header { background: linear-gradient(135deg, #0284c7, #0369a1); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.25); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 600; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .pill-box { display: flex; align-items: center; background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .pill-icon { width: 44px; height: 44px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #1e293b; font-size: 14px; margin-right: 16px; border: 2px solid #cbd5e1; }\n          .pill-name { font-size: 18px; font-weight: bold; color: #0369a1; margin: 0 0 4px 0; }\n          .pill-details { font-size: 14px; color: #64748b; margin: 0; }\n          .instruction-alert { background: #fefce8; border-left: 4px solid #eab308; padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 14px; color: #854d0e; margin: 16px 0; }\n          .cta-btn { display: inline-block; background: #0284c7; color: #ffffff; text-decoration: none; font-weight: 600; padding: 12px 24px; border-radius: 8px; margin-top: 12px; }\n          .footer { background: #f1f5f9; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">⏰ Upcoming Dose • Morning</span>\n            <h1 class=\"title\">Time for Grandma Ellie's Medication</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Hello <strong>Grandma Ellie</strong>,</p>\n            <p>This is a proactive reminder from <strong>SilverCare Connect</strong> that your scheduled dose is due soon:</p>\n            \n            <div class=\"pill-box\">\n              <div class=\"pill-icon\">Rx</div>\n              <div>\n                <p class=\"pill-name\">Metformin HCl (500mg)</p>\n                <p class=\"pill-details\">Shape: oval • Color: #ffffff • Imprint: M 500</p>\n                <p class=\"pill-details\" style=\"margin-top:4px;\">Scheduled: <strong>08:30</strong></p>\n              </div>\n            </div>\n\n            <div class=\"instruction-alert\">\n              <strong>Instructions:</strong> Take with food to avoid stomach upset. Swallow whole, do not crush.\n            </div>\n\n            \n              <div style=\"background:#fee2e2; border-left:4px solid #ef4444; padding:12px 16px; border-radius:0 8px 8px 0; font-size:13px; color:#991b1b; margin-bottom:16px;\">\n                <strong>Safety Notice:</strong> Take with meals • Avoid excessive alcohol consumption\n              </div>\n            \n\n            <p style=\"font-size:14px; color:#64748b;\">Please take this dose with a full glass of water. Once taken, open SilverCare to tap \"Taken\".</p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Healthcare Ecosystem • Proactive Senior Care & Medication Safety\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-15T09:31:47.179Z",
+      "status": "simulated",
+      "triggerReason": "Upcoming Morning dose advance reminder",
+      "metadata": {
+        "medicationId": "med-1",
+        "slotLabel": "Morning",
+        "scheduledTimeStr": "08:30"
+      }
+    },
+    {
+      "id": "notif-43e30981",
+      "profileId": "prof-arthur",
+      "type": "missed_alert",
+      "recipientName": "Rachel Pendelton-Lee",
+      "recipientEmail": "rachel.pendelton@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "🚨 Missed Dose Alert for Arthur: Metoprolol Succinate is Overdue",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fef2f2; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(220,38,38,0.12); border: 2px solid #fecaca; }\n          .header { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.3); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .alert-box { background: #fee2e2; border: 1px solid #fca5a5; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .call-button { display: inline-block; background: #dc2626; color: #ffffff !important; text-decoration: none; font-weight: 700; padding: 14px 28px; border-radius: 8px; font-size: 16px; margin-top: 12px; text-align: center; }\n          .footer { background: #f8fafc; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">🚨 URGENT ADHERENCE ALERT</span>\n            <h1 class=\"title\">Missed Dose: Metoprolol Succinate</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Dear <strong>Rachel Pendelton-Lee</strong>,</p>\n            <p>Our proactive monitoring system detected that <strong>Arthur Pendelton (Arthur)</strong> has not marked their scheduled medication as taken within the 30-minute grace window:</p>\n            \n            <div class=\"alert-box\">\n              <h3 style=\"margin-top:0; color:#991b1b; font-size:18px;\">⚠️ Medication Details</h3>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Medication:</strong> Metoprolol Succinate (25mg)</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Scheduled Time:</strong> 09:00</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Status:</strong> Overdue / Unconfirmed</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Condition Treated:</strong> Atrial Fibrillation (AFib), Post-Ischemic Stroke (Mild right hand weakness), Hyperlipidemia</p>\n            </div>\n\n            <p style=\"font-size:15px; color:#475569;\">\n              We recommend giving <strong>Arthur</strong> a quick gentle phone call to check in and verify their well-being.\n            </p>\n\n            <div style=\"text-align: center; margin: 24px 0;\">\n              <a href=\"tel:(617) 555-8832\" class=\"call-button\">\n                📞 Call Arthur Now ((617) 555-8832)\n              </a>\n            </div>\n\n            <p style=\"font-size:13px; color:#64748b; margin-top:20px;\">\n              Primary Physician: Dr. Marcus Vance, MD - (617) 555-0988\n            </p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Automated Care Escalation System\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-15T09:19:53.174Z",
+      "status": "simulated",
+      "triggerReason": "Grace window elapsed (30 mins) without dose confirmation",
+      "metadata": {
+        "medicationId": "med-7",
+        "scheduledTimeStr": "09:00"
+      }
+    },
+    {
+      "id": "notif-ebae8829",
+      "profileId": "prof-arthur",
+      "type": "missed_alert",
+      "recipientName": "Rachel Pendelton-Lee",
+      "recipientEmail": "rachel.pendelton@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "🚨 Missed Dose Alert for Arthur: Eliquis is Overdue",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fef2f2; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(220,38,38,0.12); border: 2px solid #fecaca; }\n          .header { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.3); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .alert-box { background: #fee2e2; border: 1px solid #fca5a5; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .call-button { display: inline-block; background: #dc2626; color: #ffffff !important; text-decoration: none; font-weight: 700; padding: 14px 28px; border-radius: 8px; font-size: 16px; margin-top: 12px; text-align: center; }\n          .footer { background: #f8fafc; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">🚨 URGENT ADHERENCE ALERT</span>\n            <h1 class=\"title\">Missed Dose: Eliquis</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Dear <strong>Rachel Pendelton-Lee</strong>,</p>\n            <p>Our proactive monitoring system detected that <strong>Arthur Pendelton (Arthur)</strong> has not marked their scheduled medication as taken within the 30-minute grace window:</p>\n            \n            <div class=\"alert-box\">\n              <h3 style=\"margin-top:0; color:#991b1b; font-size:18px;\">⚠️ Medication Details</h3>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Medication:</strong> Eliquis (5mg)</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Scheduled Time:</strong> 09:00</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Status:</strong> Overdue / Unconfirmed</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Condition Treated:</strong> Atrial Fibrillation (AFib), Post-Ischemic Stroke (Mild right hand weakness), Hyperlipidemia</p>\n            </div>\n\n            <p style=\"font-size:15px; color:#475569;\">\n              We recommend giving <strong>Arthur</strong> a quick gentle phone call to check in and verify their well-being.\n            </p>\n\n            <div style=\"text-align: center; margin: 24px 0;\">\n              <a href=\"tel:(617) 555-8832\" class=\"call-button\">\n                📞 Call Arthur Now ((617) 555-8832)\n              </a>\n            </div>\n\n            <p style=\"font-size:13px; color:#64748b; margin-top:20px;\">\n              Primary Physician: Dr. Marcus Vance, MD - (617) 555-0988\n            </p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Automated Care Escalation System\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-15T09:19:53.171Z",
+      "status": "simulated",
+      "triggerReason": "Grace window elapsed (30 mins) without dose confirmation",
+      "metadata": {
+        "medicationId": "med-6",
+        "scheduledTimeStr": "09:00"
+      }
+    },
+    {
+      "id": "notif-b1ba7da0",
+      "profileId": "prof-eleanor",
+      "type": "low_refill",
+      "recipientName": "David Vance",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "⚠️ Low Prescription Refill Notice: Glipizide (8 pills left)",
+      "htmlBody": "\n              <div style=\"font-family:sans-serif;padding:20px;border-radius:12px;background:#fffbeb;border:1px solid #fde68a\">\n                <h2 style=\"color:#b45309;margin-top:0\">Refill Needed for Grandma Ellie</h2>\n                <p>Medication: <strong>Glipizide (5mg)</strong></p>\n                <p>Only <strong>8 pills left</strong> in stock. Refill threshold is 10.</p>\n                <p>Pharmacy: <strong>CVS Beacon Street</strong> • Phone: (617) 555-7811</p>\n                <p>Prescription #: RX-312988-G (Prescribed by Dr. Alan Cooper)</p>\n              </div>\n            ",
+      "sentAt": "2026-11-15T09:19:53.168Z",
+      "status": "simulated",
+      "triggerReason": "Inventory count (8) at or below threshold (10)",
+      "metadata": {
+        "medicationId": "med-4",
+        "inventoryCount": 8
+      }
+    },
+    {
+      "id": "notif-1",
+      "profileId": "prof-eleanor",
+      "type": "dose_reminder",
+      "recipientName": "Eleanor Vance",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "senior",
+      "subject": "⏰ Morning Medication Reminder for Eleanor - 8:30 AM",
+      "htmlBody": "<div style=\"font-family:sans-serif;padding:20px;border-radius:12px;background:#f0fdf4;border:1px solid #bbf7d0\">\n      <h2 style=\"color:#166534;margin-top:0\">Good Morning, Eleanor!</h2>\n      <p style=\"font-size:16px;color:#15803d\">It is 8:30 AM. Time for your scheduled morning medications:</p>\n      <ul>\n        <li><strong>Metformin HCl 500mg</strong> (1 tablet with breakfast)</li>\n        <li><strong>Lisinopril 10mg</strong> (1 tablet)</li>\n      </ul>\n      <p style=\"color:#64748b;font-size:14px\">Please remember to have a glass of water and enjoy your breakfast!</p>\n    </div>",
+      "sentAt": "2026-11-15T08:15:00.000Z",
+      "status": "delivered",
+      "triggerReason": "Automated 15-minute advance dose reminder"
+    },
+    {
+      "id": "notif-2",
+      "profileId": "prof-eleanor",
+      "type": "low_refill",
+      "recipientName": "David Vance",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "⚠️ Low Medication Refill Alert: Glipizide (8 tablets left)",
+      "htmlBody": "<div style=\"font-family:sans-serif;padding:20px;border-radius:12px;background:#fffbeb;border:1px solid #fde68a\">\n      <h2 style=\"color:#b45309;margin-top:0\">Prescription Refill Warning</h2>\n      <p style=\"font-size:16px;color:#92400e\">Eleanor has only <strong>8 tablets</strong> remaining of <strong>Glipizide 5mg</strong> (Refill threshold: 10).</p>\n      <p>Pharmacy: CVS Beacon Street - Phone: (617) 555-7811 - Rx: RX-312988-G</p>\n      <p>Please contact the pharmacy or click below to arrange a refill.</p>\n    </div>",
+      "sentAt": "2026-11-15T09:00:00.000Z",
+      "status": "delivered",
+      "triggerReason": "Pill inventory dropped below threshold (8 <= 10)"
+    }
+  ]
+}

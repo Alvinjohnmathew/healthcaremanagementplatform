@@ -1,0 +1,17 @@
+{
+  "name": "carebridge-360",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Smart, Interconnected Elderly Healthcare & Medication Management Ecosystem",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "start": "node --import tsx server/src/index.ts",
+    "dev:server": "node --import tsx server/src/index.ts",
+    "dev:client": "npm --workspace=client run dev",
+    "build": "npm --workspace=client run build",
+    "test": "node run-suite.mjs"
+  }
+}

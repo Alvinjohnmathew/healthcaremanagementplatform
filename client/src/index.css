@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Custom Accessibility Styles */
+.font-size-normal {
+  font-size: 16px;
+}
+.font-size-large {
+  font-size: 19px;
+}
+.font-size-extra-large {
+  font-size: 22px;
+}
+
+/* High contrast mode */
+.high-contrast {
+  --tw-bg-opacity: 1;
+  filter: contrast(115%);
+}
+
+.high-contrast button {
+  border-width: 2px !important;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Pill shape CSS representations */
+.pill-round {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+.pill-oval {
+  border-radius: 9999px;
+  width: 44px;
+  height: 24px;
+}
+.pill-capsule {
+  border-radius: 9999px;
+  width: 48px;
+  height: 20px;
+}
+.pill-square {
+  border-radius: 6px;
+  aspect-ratio: 1 / 1;
+}
