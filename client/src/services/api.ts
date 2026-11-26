@@ -24,6 +24,12 @@ export const api = {
     return res.json();
   },
 
+  // High-Efficiency Single-Roundtrip Dashboard
+  async getDashboard(id: string) {
+    const res = await fetch(`${API_BASE}/profiles/${id}/dashboard`);
+    return res.json();
+  },
+
   async verifyPasscode(id: string, role: Role, passcode: string) {
     const res = await fetch(`${API_BASE}/profiles/${id}/verify-passcode`, {
       method: 'POST',

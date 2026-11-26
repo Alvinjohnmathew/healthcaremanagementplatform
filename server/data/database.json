@@ -474,6 +474,78 @@
       "status": "missed",
       "loggedAt": "2026-11-15T09:19:53.172Z",
       "notes": "Auto-marked missed by CareBridge adherence monitoring system"
+    },
+    {
+      "id": "log-missed-1795683805488-med-1",
+      "profileId": "prof-eleanor",
+      "medicationId": "med-1",
+      "medicationName": "Metformin HCl 500mg",
+      "dosage": "500mg",
+      "scheduledTime": "2026-11-26T03:00:00.000Z",
+      "slotLabel": "Morning",
+      "status": "missed",
+      "loggedAt": "2026-11-26T09:03:25.489Z",
+      "notes": "Auto-marked missed by CareBridge adherence monitoring system"
+    },
+    {
+      "id": "log-missed-1795683805495-med-2",
+      "profileId": "prof-eleanor",
+      "medicationId": "med-2",
+      "medicationName": "Lisinopril 10mg",
+      "dosage": "10mg",
+      "scheduledTime": "2026-11-26T03:00:00.000Z",
+      "slotLabel": "Morning",
+      "status": "missed",
+      "loggedAt": "2026-11-26T09:03:25.495Z",
+      "notes": "Auto-marked missed by CareBridge adherence monitoring system"
+    },
+    {
+      "id": "log-missed-1795683805497-med-4",
+      "profileId": "prof-eleanor",
+      "medicationId": "med-4",
+      "medicationName": "Glipizide 5mg",
+      "dosage": "5mg",
+      "scheduledTime": "2026-11-26T02:30:00.000Z",
+      "slotLabel": "Morning",
+      "status": "missed",
+      "loggedAt": "2026-11-26T09:03:25.497Z",
+      "notes": "Auto-marked missed by CareBridge adherence monitoring system"
+    },
+    {
+      "id": "log-missed-1795683805498-med-5",
+      "profileId": "prof-eleanor",
+      "medicationId": "med-5",
+      "medicationName": "Calcium Citrate + Vitamin D3 600mg",
+      "dosage": "600mg",
+      "scheduledTime": "2026-11-26T07:00:00.000Z",
+      "slotLabel": "Noon",
+      "status": "missed",
+      "loggedAt": "2026-11-26T09:03:25.498Z",
+      "notes": "Auto-marked missed by CareBridge adherence monitoring system"
+    },
+    {
+      "id": "log-missed-1795683805502-med-6",
+      "profileId": "prof-arthur",
+      "medicationId": "med-6",
+      "medicationName": "Eliquis 5mg",
+      "dosage": "5mg",
+      "scheduledTime": "2026-11-26T03:30:00.000Z",
+      "slotLabel": "Morning",
+      "status": "missed",
+      "loggedAt": "2026-11-26T09:03:25.502Z",
+      "notes": "Auto-marked missed by CareBridge adherence monitoring system"
+    },
+    {
+      "id": "log-missed-1795683805503-med-7",
+      "profileId": "prof-arthur",
+      "medicationId": "med-7",
+      "medicationName": "Metoprolol Succinate 25mg",
+      "dosage": "25mg",
+      "scheduledTime": "2026-11-26T03:30:00.000Z",
+      "slotLabel": "Morning",
+      "status": "missed",
+      "loggedAt": "2026-11-26T09:03:25.503Z",
+      "notes": "Auto-marked missed by CareBridge adherence monitoring system"
     }
   ],
   "appointments": [
@@ -752,9 +824,188 @@
       "reactions": {
         "heart": 4
       }
+    },
+    {
+      "id": "msg-sos-1795683839756",
+      "profileId": "prof-eleanor",
+      "senderName": "Grandma Ellie",
+      "senderRole": "senior",
+      "text": "🚨 EMERGENCY ALERT: Grandma Ellie pressed the Emergency SOS button at 2:33:59 pm. Emergency contacts alerted!",
+      "timestamp": "2026-11-26T09:03:59.756Z",
+      "reactions": {}
     }
   ],
   "notifications": [
+    {
+      "id": "notif-be2fa921",
+      "profileId": "prof-eleanor",
+      "type": "sos_emergency",
+      "recipientName": "Emergency Broadcast List",
+      "recipientEmail": "emergency-test@carebridge.health",
+      "recipientRole": "all",
+      "subject": "🚨 CRITICAL EMERGENCY SOS: Grandma Ellie pressed emergency button!",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #991b1b; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 25px rgba(0,0,0,0.3); border: 3px solid #dc2626; }\n          .header { background: #dc2626; color: #ffffff; padding: 28px; text-align: center; }\n          .title { font-size: 28px; font-weight: 800; margin: 0; text-transform: uppercase; letter-spacing: 1px; }\n          .body { padding: 28px; }\n          .urgent-banner { background: #fef2f2; border: 2px solid #ef4444; border-radius: 12px; padding: 20px; margin-bottom: 20px; }\n          .btn-call { display: block; background: #dc2626; color: #ffffff !important; text-align: center; padding: 16px; border-radius: 10px; font-size: 18px; font-weight: bold; text-decoration: none; margin: 20px 0; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <h1 class=\"title\">🚨 EMERGENCY SOS ACTIVATED</h1>\n            <p style=\"margin:8px 0 0 0; font-size:16px;\">Immediate Family & Caregiver Alert</p>\n          </div>\n          <div class=\"body\">\n            <div class=\"urgent-banner\">\n              <h2 style=\"color:#991b1b; margin-top:0;\">Elderly Individual Triggered SOS</h2>\n              <p style=\"font-size:18px; margin:4px 0;\"><strong>Eleanor Vance (Grandma Ellie)</strong></p>\n              <p style=\"margin:4px 0; color:#475569;\">📍 Address: <strong>42 Maplewood Terrace, Apt 3B, Boston, MA</strong></p>\n              <p style=\"margin:4px 0; color:#475569;\">⏰ Timestamp: <strong>2:33:59 pm (EST)</strong></p>\n            </div>\n\n            <a href=\"tel:911\" class=\"btn-call\">🚨 CALL EMERGENCY SERVICES (911)</a>\n\n            <h3 style=\"color:#0f172a; margin-top:20px;\">Critical Medical Information for First Responders:</h3>\n            <ul style=\"font-size:15px; color:#334155;\">\n              <li><strong>Blood Type:</strong> A+</li>\n              <li><strong>Known Allergies:</strong> Penicillin, Sulfa drugs, Shellfish</li>\n              <li><strong>Active Conditions:</strong> Type 2 Diabetes Mellitus, Hypertension (High BP), Mild Osteoarthritis in knees</li>\n              <li><strong>Primary Doctor:</strong> Dr. Sarah Bennett, MD ((617) 555-0142)</li>\n              <li><strong>Special Notes:</strong> DNR on file with Beacon Hill Health. Eleanor uses walking cane outdoors. Prefers medications with warm water or light applesauce.</li>\n            </ul>\n\n            <h3 style=\"color:#0f172a; margin-top:20px;\">Emergency Circle Contacts:</h3>\n            <div>\n              \n                <div style=\"padding:6px 0; border-bottom:1px solid #f1f5f9;\">\n                  <strong>David Vance</strong> (Son (Primary Caregiver)): <a href=\"tel:(617) 555-0899\">(617) 555-0899</a>\n                </div>\n              \n                <div style=\"padding:6px 0; border-bottom:1px solid #f1f5f9;\">\n                  <strong>Clara Miller, RN</strong> (Visiting Home Nurse): <a href=\"tel:(617) 555-0321\">(617) 555-0321</a>\n                </div>\n              \n                <div style=\"padding:6px 0; border-bottom:1px solid #f1f5f9;\">\n                  <strong>Emily Vance</strong> (Granddaughter): <a href=\"tel:(617) 555-0711\">(617) 555-0711</a>\n                </div>\n              \n            </div>\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-26T09:03:59.754Z",
+      "status": "simulated",
+      "triggerReason": "One-click SOS Emergency activation by senior",
+      "metadata": {
+        "timestamp": "2026-11-26T09:03:59.754Z"
+      }
+    },
+    {
+      "id": "notif-e1947d79",
+      "profileId": "prof-eleanor",
+      "type": "missed_alert",
+      "recipientName": "David Vance",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "🚨 Missed Dose Alert for Grandma Ellie: Metformin HCl is Overdue",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fef2f2; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(220,38,38,0.12); border: 2px solid #fecaca; }\n          .header { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.3); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .alert-box { background: #fee2e2; border: 1px solid #fca5a5; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .call-button { display: inline-block; background: #dc2626; color: #ffffff !important; text-decoration: none; font-weight: 700; padding: 14px 28px; border-radius: 8px; font-size: 16px; margin-top: 12px; text-align: center; }\n          .footer { background: #f8fafc; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">🚨 URGENT ADHERENCE ALERT</span>\n            <h1 class=\"title\">Missed Dose: Metformin HCl</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Dear <strong>David Vance</strong>,</p>\n            <p>Our proactive monitoring system detected that <strong>Eleanor Vance (Grandma Ellie)</strong> has not marked their scheduled medication as taken within the 30-minute grace window:</p>\n            \n            <div class=\"alert-box\">\n              <h3 style=\"margin-top:0; color:#991b1b; font-size:18px;\">⚠️ Medication Details</h3>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Medication:</strong> Metformin HCl (500mg)</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Scheduled Time:</strong> 08:30 AM</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Status:</strong> Overdue / Unconfirmed</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Condition Treated:</strong> Type 2 Diabetes Mellitus, Hypertension (High BP), Mild Osteoarthritis in knees</p>\n            </div>\n\n            <p style=\"font-size:15px; color:#475569;\">\n              We recommend giving <strong>Grandma Ellie</strong> a quick gentle phone call to check in and verify their well-being.\n            </p>\n\n            <div style=\"text-align: center; margin: 24px 0;\">\n              <a href=\"tel:(617) 555-0899\" class=\"call-button\">\n                📞 Call Grandma Ellie Now ((617) 555-0899)\n              </a>\n            </div>\n\n            <p style=\"font-size:13px; color:#64748b; margin-top:20px;\">\n              Primary Physician: Dr. Sarah Bennett, MD - (617) 555-0142\n            </p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Automated Care Escalation System\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-26T09:03:59.684Z",
+      "status": "simulated",
+      "triggerReason": "Grace window elapsed (30 mins) without dose confirmation",
+      "metadata": {
+        "medicationId": "med-1",
+        "scheduledTimeStr": "08:30 AM"
+      }
+    },
+    {
+      "id": "notif-3bc69100",
+      "profileId": "prof-eleanor",
+      "type": "dose_reminder",
+      "recipientName": "Grandma Ellie",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "senior",
+      "subject": "⏰ Reminder: Metformin HCl due at 08:30 for Grandma Ellie",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }\n          .header { background: linear-gradient(135deg, #0284c7, #0369a1); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.25); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 600; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .pill-box { display: flex; align-items: center; background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .pill-icon { width: 44px; height: 44px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #1e293b; font-size: 14px; margin-right: 16px; border: 2px solid #cbd5e1; }\n          .pill-name { font-size: 18px; font-weight: bold; color: #0369a1; margin: 0 0 4px 0; }\n          .pill-details { font-size: 14px; color: #64748b; margin: 0; }\n          .instruction-alert { background: #fefce8; border-left: 4px solid #eab308; padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 14px; color: #854d0e; margin: 16px 0; }\n          .cta-btn { display: inline-block; background: #0284c7; color: #ffffff; text-decoration: none; font-weight: 600; padding: 12px 24px; border-radius: 8px; margin-top: 12px; }\n          .footer { background: #f1f5f9; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">⏰ Upcoming Dose • Morning</span>\n            <h1 class=\"title\">Time for Grandma Ellie's Medication</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Hello <strong>Grandma Ellie</strong>,</p>\n            <p>This is a proactive reminder from <strong>SilverCare Connect</strong> that your scheduled dose is due soon:</p>\n            \n            <div class=\"pill-box\">\n              <div class=\"pill-icon\">Rx</div>\n              <div>\n                <p class=\"pill-name\">Metformin HCl (500mg)</p>\n                <p class=\"pill-details\">Shape: oval • Color: #ffffff • Imprint: M 500</p>\n                <p class=\"pill-details\" style=\"margin-top:4px;\">Scheduled: <strong>08:30</strong></p>\n              </div>\n            </div>\n\n            <div class=\"instruction-alert\">\n              <strong>Instructions:</strong> Take with food to avoid stomach upset. Swallow whole, do not crush.\n            </div>\n\n            \n              <div style=\"background:#fee2e2; border-left:4px solid #ef4444; padding:12px 16px; border-radius:0 8px 8px 0; font-size:13px; color:#991b1b; margin-bottom:16px;\">\n                <strong>Safety Notice:</strong> Take with meals • Avoid excessive alcohol consumption\n              </div>\n            \n\n            <p style=\"font-size:14px; color:#64748b;\">Please take this dose with a full glass of water. Once taken, open SilverCare to tap \"Taken\".</p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Healthcare Ecosystem • Proactive Senior Care & Medication Safety\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-26T09:03:59.674Z",
+      "status": "simulated",
+      "triggerReason": "Upcoming Morning dose advance reminder",
+      "metadata": {
+        "medicationId": "med-1",
+        "slotLabel": "Morning",
+        "scheduledTimeStr": "08:30"
+      }
+    },
+    {
+      "id": "notif-d7604b20",
+      "profileId": "prof-arthur",
+      "type": "missed_alert",
+      "recipientName": "Rachel Pendelton-Lee",
+      "recipientEmail": "rachel.pendelton@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "🚨 Missed Dose Alert for Arthur: Metoprolol Succinate is Overdue",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fef2f2; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(220,38,38,0.12); border: 2px solid #fecaca; }\n          .header { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.3); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .alert-box { background: #fee2e2; border: 1px solid #fca5a5; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .call-button { display: inline-block; background: #dc2626; color: #ffffff !important; text-decoration: none; font-weight: 700; padding: 14px 28px; border-radius: 8px; font-size: 16px; margin-top: 12px; text-align: center; }\n          .footer { background: #f8fafc; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">🚨 URGENT ADHERENCE ALERT</span>\n            <h1 class=\"title\">Missed Dose: Metoprolol Succinate</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Dear <strong>Rachel Pendelton-Lee</strong>,</p>\n            <p>Our proactive monitoring system detected that <strong>Arthur Pendelton (Arthur)</strong> has not marked their scheduled medication as taken within the 30-minute grace window:</p>\n            \n            <div class=\"alert-box\">\n              <h3 style=\"margin-top:0; color:#991b1b; font-size:18px;\">⚠️ Medication Details</h3>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Medication:</strong> Metoprolol Succinate (25mg)</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Scheduled Time:</strong> 09:00</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Status:</strong> Overdue / Unconfirmed</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Condition Treated:</strong> Atrial Fibrillation (AFib), Post-Ischemic Stroke (Mild right hand weakness), Hyperlipidemia</p>\n            </div>\n\n            <p style=\"font-size:15px; color:#475569;\">\n              We recommend giving <strong>Arthur</strong> a quick gentle phone call to check in and verify their well-being.\n            </p>\n\n            <div style=\"text-align: center; margin: 24px 0;\">\n              <a href=\"tel:(617) 555-8832\" class=\"call-button\">\n                📞 Call Arthur Now ((617) 555-8832)\n              </a>\n            </div>\n\n            <p style=\"font-size:13px; color:#64748b; margin-top:20px;\">\n              Primary Physician: Dr. Marcus Vance, MD - (617) 555-0988\n            </p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Automated Care Escalation System\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-26T09:03:25.504Z",
+      "status": "simulated",
+      "triggerReason": "Grace window elapsed (30 mins) without dose confirmation",
+      "metadata": {
+        "medicationId": "med-7",
+        "scheduledTimeStr": "09:00"
+      }
+    },
+    {
+      "id": "notif-01620303",
+      "profileId": "prof-arthur",
+      "type": "missed_alert",
+      "recipientName": "Rachel Pendelton-Lee",
+      "recipientEmail": "rachel.pendelton@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "🚨 Missed Dose Alert for Arthur: Eliquis is Overdue",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fef2f2; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(220,38,38,0.12); border: 2px solid #fecaca; }\n          .header { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.3); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .alert-box { background: #fee2e2; border: 1px solid #fca5a5; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .call-button { display: inline-block; background: #dc2626; color: #ffffff !important; text-decoration: none; font-weight: 700; padding: 14px 28px; border-radius: 8px; font-size: 16px; margin-top: 12px; text-align: center; }\n          .footer { background: #f8fafc; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">🚨 URGENT ADHERENCE ALERT</span>\n            <h1 class=\"title\">Missed Dose: Eliquis</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Dear <strong>Rachel Pendelton-Lee</strong>,</p>\n            <p>Our proactive monitoring system detected that <strong>Arthur Pendelton (Arthur)</strong> has not marked their scheduled medication as taken within the 30-minute grace window:</p>\n            \n            <div class=\"alert-box\">\n              <h3 style=\"margin-top:0; color:#991b1b; font-size:18px;\">⚠️ Medication Details</h3>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Medication:</strong> Eliquis (5mg)</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Scheduled Time:</strong> 09:00</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Status:</strong> Overdue / Unconfirmed</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Condition Treated:</strong> Atrial Fibrillation (AFib), Post-Ischemic Stroke (Mild right hand weakness), Hyperlipidemia</p>\n            </div>\n\n            <p style=\"font-size:15px; color:#475569;\">\n              We recommend giving <strong>Arthur</strong> a quick gentle phone call to check in and verify their well-being.\n            </p>\n\n            <div style=\"text-align: center; margin: 24px 0;\">\n              <a href=\"tel:(617) 555-8832\" class=\"call-button\">\n                📞 Call Arthur Now ((617) 555-8832)\n              </a>\n            </div>\n\n            <p style=\"font-size:13px; color:#64748b; margin-top:20px;\">\n              Primary Physician: Dr. Marcus Vance, MD - (617) 555-0988\n            </p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Automated Care Escalation System\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-26T09:03:25.502Z",
+      "status": "simulated",
+      "triggerReason": "Grace window elapsed (30 mins) without dose confirmation",
+      "metadata": {
+        "medicationId": "med-6",
+        "scheduledTimeStr": "09:00"
+      }
+    },
+    {
+      "id": "notif-5f4e916a",
+      "profileId": "prof-eleanor",
+      "type": "low_refill",
+      "recipientName": "David Vance",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "⚠️ Low Prescription Refill Notice: Glipizide (8 pills left)",
+      "htmlBody": "\n              <div style=\"font-family:sans-serif;padding:20px;border-radius:12px;background:#fffbeb;border:1px solid #fde68a\">\n                <h2 style=\"color:#b45309;margin-top:0\">Refill Needed for Grandma Ellie</h2>\n                <p>Medication: <strong>Glipizide (5mg)</strong></p>\n                <p>Only <strong>8 pills left</strong> in stock. Refill threshold is 10.</p>\n                <p>Pharmacy: <strong>CVS Beacon Street</strong> • Phone: (617) 555-7811</p>\n                <p>Prescription #: RX-312988-G (Prescribed by Dr. Alan Cooper)</p>\n              </div>\n            ",
+      "sentAt": "2026-11-26T09:03:25.501Z",
+      "status": "simulated",
+      "triggerReason": "Inventory count (8) at or below threshold (10)",
+      "metadata": {
+        "medicationId": "med-4",
+        "inventoryCount": 8
+      }
+    },
+    {
+      "id": "notif-0a9306f6",
+      "profileId": "prof-eleanor",
+      "type": "missed_alert",
+      "recipientName": "David Vance",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "🚨 Missed Dose Alert for Grandma Ellie: Calcium Citrate + Vitamin D3 is Overdue",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fef2f2; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(220,38,38,0.12); border: 2px solid #fecaca; }\n          .header { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.3); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .alert-box { background: #fee2e2; border: 1px solid #fca5a5; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .call-button { display: inline-block; background: #dc2626; color: #ffffff !important; text-decoration: none; font-weight: 700; padding: 14px 28px; border-radius: 8px; font-size: 16px; margin-top: 12px; text-align: center; }\n          .footer { background: #f8fafc; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">🚨 URGENT ADHERENCE ALERT</span>\n            <h1 class=\"title\">Missed Dose: Calcium Citrate + Vitamin D3</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Dear <strong>David Vance</strong>,</p>\n            <p>Our proactive monitoring system detected that <strong>Eleanor Vance (Grandma Ellie)</strong> has not marked their scheduled medication as taken within the 30-minute grace window:</p>\n            \n            <div class=\"alert-box\">\n              <h3 style=\"margin-top:0; color:#991b1b; font-size:18px;\">⚠️ Medication Details</h3>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Medication:</strong> Calcium Citrate + Vitamin D3 (600mg)</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Scheduled Time:</strong> 12:30</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Status:</strong> Overdue / Unconfirmed</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Condition Treated:</strong> Type 2 Diabetes Mellitus, Hypertension (High BP), Mild Osteoarthritis in knees</p>\n            </div>\n\n            <p style=\"font-size:15px; color:#475569;\">\n              We recommend giving <strong>Grandma Ellie</strong> a quick gentle phone call to check in and verify their well-being.\n            </p>\n\n            <div style=\"text-align: center; margin: 24px 0;\">\n              <a href=\"tel:(617) 555-0899\" class=\"call-button\">\n                📞 Call Grandma Ellie Now ((617) 555-0899)\n              </a>\n            </div>\n\n            <p style=\"font-size:13px; color:#64748b; margin-top:20px;\">\n              Primary Physician: Dr. Sarah Bennett, MD - (617) 555-0142\n            </p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Automated Care Escalation System\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-26T09:03:25.499Z",
+      "status": "simulated",
+      "triggerReason": "Grace window elapsed (30 mins) without dose confirmation",
+      "metadata": {
+        "medicationId": "med-5",
+        "scheduledTimeStr": "12:30"
+      }
+    },
+    {
+      "id": "notif-272a8aa3",
+      "profileId": "prof-eleanor",
+      "type": "missed_alert",
+      "recipientName": "David Vance",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "🚨 Missed Dose Alert for Grandma Ellie: Glipizide is Overdue",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fef2f2; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(220,38,38,0.12); border: 2px solid #fecaca; }\n          .header { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.3); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .alert-box { background: #fee2e2; border: 1px solid #fca5a5; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .call-button { display: inline-block; background: #dc2626; color: #ffffff !important; text-decoration: none; font-weight: 700; padding: 14px 28px; border-radius: 8px; font-size: 16px; margin-top: 12px; text-align: center; }\n          .footer { background: #f8fafc; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">🚨 URGENT ADHERENCE ALERT</span>\n            <h1 class=\"title\">Missed Dose: Glipizide</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Dear <strong>David Vance</strong>,</p>\n            <p>Our proactive monitoring system detected that <strong>Eleanor Vance (Grandma Ellie)</strong> has not marked their scheduled medication as taken within the 30-minute grace window:</p>\n            \n            <div class=\"alert-box\">\n              <h3 style=\"margin-top:0; color:#991b1b; font-size:18px;\">⚠️ Medication Details</h3>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Medication:</strong> Glipizide (5mg)</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Scheduled Time:</strong> 08:00</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Status:</strong> Overdue / Unconfirmed</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Condition Treated:</strong> Type 2 Diabetes Mellitus, Hypertension (High BP), Mild Osteoarthritis in knees</p>\n            </div>\n\n            <p style=\"font-size:15px; color:#475569;\">\n              We recommend giving <strong>Grandma Ellie</strong> a quick gentle phone call to check in and verify their well-being.\n            </p>\n\n            <div style=\"text-align: center; margin: 24px 0;\">\n              <a href=\"tel:(617) 555-0899\" class=\"call-button\">\n                📞 Call Grandma Ellie Now ((617) 555-0899)\n              </a>\n            </div>\n\n            <p style=\"font-size:13px; color:#64748b; margin-top:20px;\">\n              Primary Physician: Dr. Sarah Bennett, MD - (617) 555-0142\n            </p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Automated Care Escalation System\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-26T09:03:25.498Z",
+      "status": "simulated",
+      "triggerReason": "Grace window elapsed (30 mins) without dose confirmation",
+      "metadata": {
+        "medicationId": "med-4",
+        "scheduledTimeStr": "08:00"
+      }
+    },
+    {
+      "id": "notif-4ce40031",
+      "profileId": "prof-eleanor",
+      "type": "missed_alert",
+      "recipientName": "David Vance",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "🚨 Missed Dose Alert for Grandma Ellie: Lisinopril is Overdue",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fef2f2; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(220,38,38,0.12); border: 2px solid #fecaca; }\n          .header { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.3); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .alert-box { background: #fee2e2; border: 1px solid #fca5a5; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .call-button { display: inline-block; background: #dc2626; color: #ffffff !important; text-decoration: none; font-weight: 700; padding: 14px 28px; border-radius: 8px; font-size: 16px; margin-top: 12px; text-align: center; }\n          .footer { background: #f8fafc; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">🚨 URGENT ADHERENCE ALERT</span>\n            <h1 class=\"title\">Missed Dose: Lisinopril</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Dear <strong>David Vance</strong>,</p>\n            <p>Our proactive monitoring system detected that <strong>Eleanor Vance (Grandma Ellie)</strong> has not marked their scheduled medication as taken within the 30-minute grace window:</p>\n            \n            <div class=\"alert-box\">\n              <h3 style=\"margin-top:0; color:#991b1b; font-size:18px;\">⚠️ Medication Details</h3>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Medication:</strong> Lisinopril (10mg)</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Scheduled Time:</strong> 08:30</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Status:</strong> Overdue / Unconfirmed</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Condition Treated:</strong> Type 2 Diabetes Mellitus, Hypertension (High BP), Mild Osteoarthritis in knees</p>\n            </div>\n\n            <p style=\"font-size:15px; color:#475569;\">\n              We recommend giving <strong>Grandma Ellie</strong> a quick gentle phone call to check in and verify their well-being.\n            </p>\n\n            <div style=\"text-align: center; margin: 24px 0;\">\n              <a href=\"tel:(617) 555-0899\" class=\"call-button\">\n                📞 Call Grandma Ellie Now ((617) 555-0899)\n              </a>\n            </div>\n\n            <p style=\"font-size:13px; color:#64748b; margin-top:20px;\">\n              Primary Physician: Dr. Sarah Bennett, MD - (617) 555-0142\n            </p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Automated Care Escalation System\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-26T09:03:25.496Z",
+      "status": "simulated",
+      "triggerReason": "Grace window elapsed (30 mins) without dose confirmation",
+      "metadata": {
+        "medicationId": "med-2",
+        "scheduledTimeStr": "08:30"
+      }
+    },
+    {
+      "id": "notif-24e78904",
+      "profileId": "prof-eleanor",
+      "type": "missed_alert",
+      "recipientName": "David Vance",
+      "recipientEmail": "david.vance@silvercare-demo.com",
+      "recipientRole": "family",
+      "subject": "🚨 Missed Dose Alert for Grandma Ellie: Metformin HCl is Overdue",
+      "htmlBody": "\n      <!DOCTYPE html>\n      <html>\n      <head>\n        <meta charset=\"utf-8\">\n        <style>\n          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fef2f2; margin: 0; padding: 24px; color: #1e293b; }\n          .card { max-width: 580px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(220,38,38,0.12); border: 2px solid #fecaca; }\n          .header { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #ffffff; padding: 24px 28px; }\n          .badge { display: inline-block; background: rgba(255,255,255,0.3); color: #fff; padding: 4px 12px; border-radius: 9999px; font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }\n          .title { font-size: 24px; font-weight: bold; margin: 0; }\n          .body { padding: 28px; }\n          .alert-box { background: #fee2e2; border: 1px solid #fca5a5; border-radius: 12px; padding: 18px; margin: 20px 0; }\n          .call-button { display: inline-block; background: #dc2626; color: #ffffff !important; text-decoration: none; font-weight: 700; padding: 14px 28px; border-radius: 8px; font-size: 16px; margin-top: 12px; text-align: center; }\n          .footer { background: #f8fafc; padding: 16px 28px; font-size: 12px; color: #94a3b8; text-align: center; }\n        </style>\n      </head>\n      <body>\n        <div class=\"card\">\n          <div class=\"header\">\n            <span class=\"badge\">🚨 URGENT ADHERENCE ALERT</span>\n            <h1 class=\"title\">Missed Dose: Metformin HCl</h1>\n          </div>\n          <div class=\"body\">\n            <p style=\"font-size: 16px; line-height: 1.5;\">Dear <strong>David Vance</strong>,</p>\n            <p>Our proactive monitoring system detected that <strong>Eleanor Vance (Grandma Ellie)</strong> has not marked their scheduled medication as taken within the 30-minute grace window:</p>\n            \n            <div class=\"alert-box\">\n              <h3 style=\"margin-top:0; color:#991b1b; font-size:18px;\">⚠️ Medication Details</h3>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Medication:</strong> Metformin HCl (500mg)</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Scheduled Time:</strong> 08:30</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Status:</strong> Overdue / Unconfirmed</p>\n              <p style=\"margin:4px 0; font-size:15px;\"><strong>Condition Treated:</strong> Type 2 Diabetes Mellitus, Hypertension (High BP), Mild Osteoarthritis in knees</p>\n            </div>\n\n            <p style=\"font-size:15px; color:#475569;\">\n              We recommend giving <strong>Grandma Ellie</strong> a quick gentle phone call to check in and verify their well-being.\n            </p>\n\n            <div style=\"text-align: center; margin: 24px 0;\">\n              <a href=\"tel:(617) 555-0899\" class=\"call-button\">\n                📞 Call Grandma Ellie Now ((617) 555-0899)\n              </a>\n            </div>\n\n            <p style=\"font-size:13px; color:#64748b; margin-top:20px;\">\n              Primary Physician: Dr. Sarah Bennett, MD - (617) 555-0142\n            </p>\n          </div>\n          <div class=\"footer\">\n            CareBridge 360 Automated Care Escalation System\n          </div>\n        </div>\n      </body>\n      </html>\n    ",
+      "sentAt": "2026-11-26T09:03:25.493Z",
+      "status": "simulated",
+      "triggerReason": "Grace window elapsed (30 mins) without dose confirmation",
+      "metadata": {
+        "medicationId": "med-1",
+        "scheduledTimeStr": "08:30"
+      }
+    },
     {
       "id": "notif-3ecace94",
       "profileId": "prof-eleanor",

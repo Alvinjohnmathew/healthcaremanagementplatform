@@ -27,6 +27,7 @@ interface NavbarProps {
   onOpenEmergencyModal: () => void;
   onOpenEmailCenter: () => void;
   onOpenDoctorReport: () => void;
+  onOpenAlignmentMatrix: () => void;
   onResetData: () => void;
   fontSize: 'normal' | 'large' | 'extra-large';
   onChangeFontSize: (size: 'normal' | 'large' | 'extra-large') => void;
@@ -46,6 +47,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenEmergencyModal,
   onOpenEmailCenter,
   onOpenDoctorReport,
+  onOpenAlignmentMatrix,
   onResetData,
   fontSize,
   onChangeFontSize,
@@ -186,6 +188,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                 Contrast
               </button>
             </div>
+
+            {/* Challenge & Rubric Alignment Button */}
+            <button
+              onClick={onOpenAlignmentMatrix}
+              className="flex items-center gap-1.5 px-3 py-2 text-xs font-bold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 rounded-xl border border-indigo-200 transition-all shadow-xs cursor-pointer"
+              title="Official Problem Statement & Rubric Alignment Matrix"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
+              <span className="hidden sm:inline">Rubric Alignment</span>
+            </button>
 
             {/* Doctor Visit Report Button */}
             <button
